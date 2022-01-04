@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-//import 'package:student_store/Screens/CartPage.dart';
+import 'package:student_store/Screens/CartPage.dart';
 import 'package:student_store/providers/StoreProvider.dart';
 import 'package:provider/provider.dart';
 
 class ProductCatalog extends StatelessWidget {
-  // const ProductCatalog({ Key key }) : super(key: key);
+  //const ProductCatalog({required Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,8 @@ class ProductCatalog extends StatelessWidget {
             actions: [
               IconButton(
                   onPressed: () {
-                    //   Navigator.push(context,MaterialPageRoute(builder: (_)=> BasketPage()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (_) => BasketPage()));
                   },
                   icon: Icon(Icons.shopping_bag))
             ],

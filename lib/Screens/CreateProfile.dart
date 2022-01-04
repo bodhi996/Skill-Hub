@@ -2,10 +2,9 @@
 // import 'package:flutter/material.dart';
 // import 'package:cloud_firestore/cloud_firestore.dart';
 // import 'package:student_store/Screens/ProductCatalog.dart';
-// import 'package:student_store/Screens/ProductCatalog.dart';
 
 // class CreateProfilePage extends StatefulWidget {
-//   const CreateProfilePage({Key key}) : super(key: key);
+//   const CreateProfilePage({required Key key}) : super(key: key);
 
 //   @override
 //   _CreateProfilePageState createState() => _CreateProfilePageState();
@@ -14,10 +13,10 @@
 // class _CreateProfilePageState extends State<CreateProfilePage> {
 //   final GlobalKey<FormState> createProfileKey = new GlobalKey<FormState>();
 
-//   String name;
-//   String address;
-//   String state;
-//   String phoneNumber;
+//   var name;
+//   var address;
+//   var state;
+//   var phoneNumber;
 
 //   static List<String> states = [
 //     'Karnataka',

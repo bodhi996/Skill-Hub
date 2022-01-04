@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 import 'package:razorpay_flutter/razorpay_flutter.dart';
 
 class BasketPage extends StatefulWidget {
-  const BasketPage({required Key key}) : super(key: key);
+  //const BasketPage({required Key key}) : super(key: key);
 
   @override
   _BasketPageState createState() => _BasketPageState();
@@ -26,7 +26,8 @@ class _BasketPageState extends State<BasketPage> {
     storeProvider.products.forEach((element) {
       if (element.addedToCart == true) {
         setState(() {
-          amount += element.price;
+          amount += 0;
+          //element.price;
         });
       }
     });

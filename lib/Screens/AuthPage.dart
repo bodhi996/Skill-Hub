@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:student_store/Screens/ProductCatalog.dart';
+import 'package:student_store/Screens/CreateProfile.dart';
 
 class AuthPage extends StatelessWidget {
   @override
