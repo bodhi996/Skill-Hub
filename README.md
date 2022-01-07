@@ -21,15 +21,17 @@ Our application boasts of several features:
 
 ## Description of the codebase
 
-<img src="assets/Icons/Screenshot%20(173).png" width="200" height="400"> <img src="assets/Icons/Screenshot%20(174).png" width="200" height="400"> 
-<img src="assets/Icons/Screenshot%20(175).png" width="200" height="400">
-<img src="assets/Icons/Screenshot%20(176).png" width="200" height="400">
+<img src="assets/Icons/Screenshot%20(173).png" width="175" height="400"> <img src="assets/Icons/Screenshot%20(174).png" width="175" height="400"> 
+<img src="assets/Icons/Screenshot%20(175).png" width="175" height="400">
+<img src="assets/Icons/Screenshot%20(178).png" width="175" height="400">
+<img src="assets/Icons/Screenshot%20(176).png" width="175" height="400">
        
 The code is well arranged into sub-directories which are -
 1. The first page is the ```home``` page. 
 2. The second page is the ```product``` catalog page. 
 3. The thrid page is the ```Cart/Basket``` page. 
-4. Finally, the fourth page is the ```payment``` gateway.
+4. The fourth is the ```Connect With``` page that redirects to the Linkedin of the person in concern. 
+5. Finally, the fourth page is the ```payment``` gateway.
 
 # How to Run
 
