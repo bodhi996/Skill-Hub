@@ -1,32 +1,56 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Link extends StatefulWidget {
+  const Link({Key? key}) : super(key: key);
+
   @override
   _LinkState createState() => _LinkState();
 }
 
 class _LinkState extends State<Link> {
+  get child => null;
+
+  get splashRadius => null;
+
   _launchurl() async {
-    const url = 'https://www.linkedin.com/in/bodhisatwa-b-0aa767201/';
+    const url = 'https://www.linkedin.com/';
     if (await canLaunch(url)) {
       await launch(url);
     } else {
-      throw "Could Not Connect";
+      throw "could not connect";
     }
   }
 
   @override
   Widget build(BuildContext context) {
+    var cyan;
     return Scaffold(
       appBar: AppBar(
-        title: Text("Link"),
+        title: const Text("Connect With"),
+        iconTheme: const IconThemeData(color: Colors.blue),
+        backgroundColor: const Color(0xFF311B92),
       ),
-      body: Center(
-          child: IconButton(
-        icon: Icon(Icons.link),
-        onPressed: _launchurl,
-      )),
+      body: Container(
+        alignment: Alignment.center,
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/Icons/linkdn.png"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: IconButton(
+          icon: Icon(
+            Icons.touch_app_outlined,
+            size: 100,
+          ),
+          alignment: Alignment(0.45, 2.5),
+          iconSize: 200,
+          tooltip: "click to open",
+          onPressed: _launchurl,
+        ),
+      ),
     );
   }
 }
