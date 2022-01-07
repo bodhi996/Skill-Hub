@@ -6,25 +6,32 @@ class StoreProvider extends ChangeNotifier {
     fetchProducts();
   }
   List<Product> products = [
-    new Product("Kshitij Raj", "Backend Developer", "assets/Icons/DS Front.png",
-        "Rs 1000/ month"),
-    new Product("Bodhisatwa Bhattacharya", "Kotlin/ Flutter and Dart Developer",
-        "assets/Icons/DS Back.png", "5000/ month",
+    new Product("Kishaloy Kar Choudhary", "Frontend Tester",
+        "assets/Icons/Kishaloy.png", 10000),
+    new Product("Kshitij Raj", "Back-end Developer",
+        "assets/Icons/DS Front.png", 10000),
+    new Product("Souhardya Dutta", "React Native Developer",
+        "assets/Icons/Souhardya.png", 7000),
+    new Product("Bodhisatwa Bhattacharya", "SkillHub Founder",
+        "assets/Icons/DS Back.png", 50000,
         featured: true),
-    new Product("Divya Uchenya", "Maa Behen Ak Kar Dene Wali",
-        "assets/Icons/DSA Front.png", "100/ per month"),
-    new Product("Ayushman Dutta", "Tension ki Dukan",
-        "assets/Icons/DWT Front.png", "1000/ month"),
-    new Product("Rana Safal", "Massage Therapist",
-        "assets/Icons/ESDS Front.png", "10/ month",
+    new Product("Divya Uchenya", "Computer Networks and Cryptography",
+        "assets/Icons/DSA Front.png", 35000),
+    new Product("Ayushman Dutta", "Computer Vision and Deep Learning",
+        "assets/Icons/DWT Front.png", 20000),
+    new Product(
+        "Rana Safal", "SkillHub Founder", "assets/Icons/ESDS Front.png", 50000,
+        featured: true),
+    new Product(
+        "Shivam Sharma", "SkillHub Founder", "assets/Icons/Pal.png", 50000,
         featured: true),
   ];
 
   Future<void> fetchProducts() async {
     await FirebaseFirestore.instance.collection('Products').get().then((value) {
       value.docs.forEach((doc) {
-        Product product = new Product(
-            doc['name'], doc['description'], doc['image'], doc['price'],
+        Product product = new Product(doc['name'], doc['description'],
+            doc['image'], double.parse(doc['price'].toString()),
             featured: doc['featured']);
         products.add(product);
       });
@@ -50,7 +57,7 @@ class Product {
   String name;
   String description;
   String image;
-  String price;
+  double price;
   bool featured;
   bool addedToCart;
   Product(this.name, this.description, this.image, this.price,

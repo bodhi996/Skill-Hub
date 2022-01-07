@@ -26,8 +26,7 @@ class _BasketPageState extends State<BasketPage> {
     storeProvider.products.forEach((element) {
       if (element.addedToCart == true) {
         setState(() {
-          amount += 0;
-          //element.price;
+          amount += element.price;
         });
       }
     });
@@ -84,7 +83,7 @@ class _BasketPageState extends State<BasketPage> {
     final storeProvider = Provider.of<StoreProvider>(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text('basket Page'),
+        title: Text('Hire Page'),
       ),
       body: Container(
         height: MediaQuery.of(context).size.height,
@@ -150,9 +149,9 @@ class _BasketPageState extends State<BasketPage> {
                           'key': 'rzp_test_nXcegg8K07YAG3',
                           'amount': amount * 100,
                           'name': 'BIT Mesra Student Store',
-                          'description': 'Sexosexo',
+                          'description': 'Employ Now',
                           'prefill': {
-                            'contact': '6969696969',
+                            'contact': '1234567890',
                             'email': 'test@bitmesra.ac.in'
                           }
                         };

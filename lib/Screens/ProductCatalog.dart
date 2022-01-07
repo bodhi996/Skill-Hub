@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:student_store/Screens/AuthPage.dart';
 import 'package:student_store/Screens/CartPage.dart';
+import 'package:student_store/Screens/link.dart';
 import 'package:student_store/providers/StoreProvider.dart';
 import 'package:provider/provider.dart';
 
@@ -13,7 +15,7 @@ class ProductCatalog extends StatelessWidget {
         return Scaffold(
           appBar: AppBar(
             title: Text(
-              'Merchandise Store',
+              'SKILL HUB',
               style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
@@ -26,8 +28,14 @@ class ProductCatalog extends StatelessWidget {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (_) => BasketPage()));
                   },
-                  icon: Icon(Icons.shopping_bag))
+                  icon: Icon(Icons.add_shopping_cart_outlined)),
             ],
+            leading: IconButton(
+                onPressed: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (_) => AuthPage()));
+                },
+                icon: Icon(Icons.home_outlined)),
           ),
           body: CustomScrollView(
             slivers: [
@@ -53,7 +61,7 @@ class ProductCatalog extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      'Featured Products',
+                      'Verified Users',
                       style: TextStyle(fontSize: 22),
                     ),
                   ),
@@ -142,12 +150,37 @@ class ProductCatalog extends StatelessWidget {
                                                     side: MaterialStateProperty.all(BorderSide(
                                                         width: 2,
                                                         color: Colors.white))),
-                                                onPressed: () async {},
-                                                child: Text('Buy Now', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold))),
+                                                onPressed: () async {
+                                                  storeProvider.updateCart(
+                                                      featuredProduct);
+                                                  Navigator.push(
+                                                      context,
+                                                      MaterialPageRoute(
+                                                          builder: (_) =>
+                                                              BasketPage()));
+                                                },
+                                                child: Text('Hire Now', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold))),
                                             IconButton(
-                                                icon: Icon(Icons.share),
+                                                icon: Icon(
+                                                  Icons.verified_user_outlined,
+                                                  color: Color(0xFF26C6DA),
+                                                ),
                                                 onPressed: () {
-                                                  debugPrint('Share logic');
+                                                  debugPrint('VERIFIED');
+                                                }),
+                                            IconButton(
+                                                icon: Icon(
+                                                  Icons.link_outlined,
+                                                  color: Color(0xFF26C6DA),
+                                                ),
+                                                onPressed: () {
+                                                  storeProvider.updateCart(
+                                                      featuredProduct);
+                                                  Navigator.push(
+                                                      context,
+                                                      MaterialPageRoute(
+                                                          builder: (_) =>
+                                                              Link()));
                                                 }),
                                           ],
                                         )
@@ -169,7 +202,7 @@ class ProductCatalog extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      'All Products',
+                      'All users',
                       style: TextStyle(fontSize: 22),
                     ),
                   ),
@@ -252,13 +285,15 @@ class ProductCatalog extends StatelessWidget {
                                                               40))),
                                               side: MaterialStateProperty.all(
                                                   BorderSide(width: 2, color: Colors.white))),
-                                          onPressed: () async {},
-                                          child: Text('Buy Now', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold))),
-                                      IconButton(
-                                          icon: Icon(Icons.share),
-                                          onPressed: () {
-                                            debugPrint('Share logic');
-                                          }),
+                                          onPressed: () async {
+                                            storeProvider.updateCart(product);
+                                            Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                    builder: (_) =>
+                                                        BasketPage()));
+                                          },
+                                          child: Text('Hire Now', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold))),
                                     ],
                                   )
                                 ],
