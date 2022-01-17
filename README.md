@@ -8,7 +8,7 @@ The project is a mobile application developed in Flutter using Dart as a program
 
 The idea of the project is as an intra-organizational employment-oriented service that operates via mobile apps. 
 The organization that we have used as a test case is BIT Mesra, however, it can be oriented towards any other organization as well. The main goal is to bring convenience to freelancers and startups to hire people from within the community from where they are based.<br />
-The app can be very useful to foster the experience of networking to those who have no prior industry experience and also to those looking for a cost-competitive employability from within their organizational structure. 
+The app can be very useful to foster expirence of networking to those who has no prior industry exprence and also to those looking for a cost competative employbility from within their organizational structure. 
 
 # Achievements
 
@@ -21,14 +21,14 @@ Our application boasts of several features:
 
 ## Description of the codebase
 
-<img src="assets/Icons/Screenshot%20(173).png" width="165" height="400"> <img src="assets/Icons/Screenshot%20(174).png" width="165" height="400"> 
-<img src="assets/Icons/Screenshot%20(175).png" width="165" height="400"><img src="assets/Icons/Screenshot%20(178).png" width="165" height="400">
-<img src="assets/Icons/Screenshot%20(176).png" width="165" height="400">
+<img src="assets/Icons/Screenshot%20(173).png" width="170" height="400"> <img src="assets/Icons/Screenshot%20(174).png" width="200" height="400"> 
+<img src="assets/Icons/Screenshot%20(175).png" width="170" height="400"><img src="assets/Icons/Screenshot%20(178).png" width="200" height="400">
+<img src="assets/Icons/Screenshot%20(176).png" width="170" height="400">
        
 The code is well arranged into sub-directories which are -
 1. The first page is the ```home``` page. 
 2. The second page is the ```product```catalogue page. 
-3. The third page is the ``` Cart/Basket``` page. 
+3. The third page is the ```Cart/Basket``` page. 
 4. The fourth Page is the ```Connect With``` page so that the user can connect with prospective clients. 
 5. Finally, the fifth page is the ```payment``` gateway.
 
@@ -52,13 +52,12 @@ Special thanks and appreciation for our mentor who entertained even our stupides
 
 ## Team Members
 
-<img src="assets/Icons/DS%20Back.png" width="170" height="170">  <img src="assets/Icons/ESDS%20Front.png" width="170" height="170">
+<img src="assets/Icons/DS%20Back.png" width="170" height="170"> <img src="assets/Icons/Pal.png" width="170" height="170"> <img src="assets/Icons/ESDS%20Front.png" width="170" height="170">
 
 1. The first picture is of ```Bodhisatwa Bhattacharya``` who is the ```team leader```
-2. The third picture is of ```Rana Safal```
+2. The second picture is of ```Shivam Sharma      ```
+3. The third picture is of ```Rana Safal```
 
 ## APK Version
 
 You can find the apk version of [Skill Hub](https://github.com/bodhi996/IEEE-Megaproject/blob/master/student_store/SkillHub.apk) here 
-
-
