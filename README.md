@@ -52,11 +52,10 @@ Special thanks and appreciation for our mentor who entertained even our stupides
 
 ## Team Members
 
-<img src="assets/Icons/DS%20Back.png" width="170" height="170"> <img src="assets/Icons/Pal.png" width="170" height="170"> <img src="assets/Icons/ESDS%20Front.png" width="170" height="170">
+<img src="assets/Icons/DS%20Back.png" width="170" height="170">  <img src="assets/Icons/ESDS%20Front.png" width="170" height="170">
 
 1. The first picture is of ```Bodhisatwa Bhattacharya``` who is the ```team leader```
-2. The second picture is of ```Shivam Sharma      ```
-3. The third picture is of ```Rana Safal```
+2. The third picture is of ```Rana Safal```
 
 ## APK Version
 
