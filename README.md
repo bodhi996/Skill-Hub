@@ -2,7 +2,7 @@
 
 ## Domain 
 
-The project is a mobile application developed in Flutter using Dart as a programming language, wireframe as UI and Firestore as backend server. This app can be operated in both iOS and Android  
+The project is a mobile application   developed in Flutter using Dart as a programming language, wireframe as UI and Firestore as backend server. This app can be operated in both iOS and Android  
 
 ## Idea
 
