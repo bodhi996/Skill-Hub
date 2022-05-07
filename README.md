@@ -53,7 +53,6 @@ Special thanks and appreciation for our mentor who entertained even our stupides
 
 <img src="assets/Icons/DS%20Back.png" width="170" height="170">
 
-1. The first picture is of ```Bodhisatwa Bhattacharya``` who is the ```team leader```
 
 ## APK Version
 
