@@ -2,13 +2,13 @@
 
 ## Domain 
 
-The project is a mobile application   developed in Flutter using Dart as a programming language, wireframe as UI and Firestore as backend server. This app can be operated in both iOS and Android  
+The project is a mobile application developed in Flutter using Dart as a programming language, wireframe as UI and Firestore as backend server. This app can be operated in both iOS and Android  
 
 ## Idea
 
 The idea of the project is as an intra-organizational employment-oriented service that operates via mobile apps. 
-The organization that we have used as a test case is BIT Mesra, however, it can be oriented towards any other organization as well. The main goal is to bring convenience to freelancers and startups to hire people from within the community from where they are based.<br />
-The app can be very useful to foster expirence of networking to those who has no prior industry exprence and also to those looking for a cost competative employbility from within their organizational structure. 
+The organisation that we have used as a test case is BIT Mesra, however, it can be oriented towards any other organisation as well. The main goal is to bring convenience to freelancers and startups by hiring people from within the community from where they are based.<br />
+The app can be handy to foster the experience of networking to those who have no prior industry experience and also to those looking for a cost competitive employability from within their organizational structure. 
 
 # Achievements
 
@@ -16,8 +16,8 @@ Our application boasts of several features:
 1. The application differentiates between verified and non-verified users. The algorithm will give verification symbols to those who have been consistent users of this platform.
 2. The app also uses third party features such as Linkedin to give out users better depth into their prospective employees.
 3. The app provides for a basket so that the user can select multiple people at one time without having to go through the same process recursively. 
-4.  The app also provides for payment gateway so that the user doesn't have to deal with the hassle of negotiation and engage with third party payments procedure. 
-5.  The user also has the feature of deleting any of this selection from the Cart/Basket page if he/she reconsiders their decesion. 
+4.  The app also provides for payment gateway so that the user doesn't have to deal with the hassle of negotiation and engaging with third party payments procedure. 
+5.  The user also has the feature of deleting any of this selection from the Cart/Basket page if he/she reconsiders their decision. 
 
 ## Description of the codebase
 
@@ -27,7 +27,7 @@ Our application boasts of several features:
 The code is well arranged into sub-directories which are -
 1. The first page is the ```home``` page. 
 2. The second page is the ```product```catalogue page. 
-3. The third page is the ```Cart/Basket``` page. 
+3. The third page is the ``` Cart/Basket``` page. 
 4. The fourth Page is the ```Connect With``` page so that the user can connect with prospective clients. 
 5. Finally, the fifth page is the ```payment``` gateway.
 
@@ -47,7 +47,7 @@ The code is well arranged into sub-directories which are -
 ## Team Mentor
 
 Saurav Priadarshini <br />
-Special thanks and appreciation for our mentor who entertained even our stupidest doubt without hesitation. 😁
+Special thanks and appreciation to our mentor who entertained even our stupidest doubts without hesitation. 😁
 
 ## Team Members
 
