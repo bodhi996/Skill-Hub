@@ -21,7 +21,7 @@ Our application boasts of several features:
 
 ## Description of the codebase
 
-<img src="assets/Icons/Screenshot%20(173).png" width="170" height="400"> <img src="assets/Icons/Screenshot%20(174).png" width="150" height="400"> 
+<img src="assets/Icons/Screenshot%20(174).png" width="150" height="400"> 
 <img src="assets/Icons/Screenshot%20(175).png" width="170" height="400"><img src="assets/Icons/Screenshot%20(178).png" width="150" height="400">&nbsp;<img src="assets/Icons/Screenshot%20(176).png" width="170" height="400">
        
 The code is well arranged into sub-directories which are -
